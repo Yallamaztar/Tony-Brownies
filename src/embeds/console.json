@@ -1,0 +1,24 @@
+{
+    "content": "",
+    "tts": false,
+    "embeds": [
+      {
+        "id": 955428024,
+        "description": "[Help Page For Commands](http://141.11.196.83:1624/Home/Help)\n**syntax example:** /b <player> <reason>\n",
+        "fields": [],
+        "title": "IW4M Console - Brownies",
+        "image": {
+          "url": "https://cdn.discordapp.com/attachments/1230027404265914419/1230056294132748329/my-BROWNIES_.png?ex=6631ee31&is=661f7931&hm=33b89b1a170aa46cc27328d096ba73c3d745af0ac288662e5f3ad27cf6d335c3&"
+        },
+        "footer": {
+          "text": "Brownies SnD | http://141.11.196.83:1624/ ",
+          "icon_url": "https://cdn.discordapp.com/icons/1190657549494669402/ee182ebab0fd3038efc7cea1f11907cd.webp?size=80"
+        },
+        "color": 308479
+      }
+    ],
+    "components": [],
+    "actions": {},
+    "username": "Tony Bot",
+    "avatar_url": "https://cdn.discordapp.com/avatars/996056057493323808/c2f0fd66f1d54bf965bdc3a69042b559.webp?size=80"
+  }

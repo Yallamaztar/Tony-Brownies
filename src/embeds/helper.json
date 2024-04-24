@@ -1,0 +1,18 @@
+{
+    "content": "",
+    "tts": false,
+    "embeds": [
+      {
+        "id": 475386377,
+        "description": "If players name has spaces, put it in double quotes. E.g. \"T o n y\"",
+        "fields": [],
+        "author": {
+          "name": "Helper menu"
+        },
+        "color": 46847
+      }
+    ],
+    "components": [],
+    "actions": {},
+    "avatar_url": "https://cdn.discordapp.com/avatars/996056057493323808/c2f0fd66f1d54bf965bdc3a69042b559.webp?size=80"
+  }

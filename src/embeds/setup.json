@@ -1,0 +1,33 @@
+{
+    "content": "",
+    "tts": false,
+    "embeds": [
+      {
+        "id": 321065020,
+        "description": "Select your console channel, or make a new one",
+        "fields": [],
+        "title": "Tony Bot Setup Menu",
+        "color": 43007
+      }
+    ],
+    "components": [
+      {
+        "id": 37069603,
+        "type": 1,
+        "components": []
+      },
+      {
+        "id": 529240679,
+        "type": 1,
+        "components": [
+          {
+            "id": 236131660,
+            "type": 3,
+            "options": []
+          }
+        ]
+      }
+    ],
+    "actions": {},
+    "avatar_url": "https://cdn.discordapp.com/avatars/996056057493323808/c2f0fd66f1d54bf965bdc3a69042b559.webp?size=80"
+  }
