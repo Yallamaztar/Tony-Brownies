@@ -1,22 +1,12 @@
 import os, platform
 import json
-import aiohttp 
-
-async def execute_request(req, headers):
-    async with aiohttp.ClientSession() as session:
-        async with session.get(req, headers=headers) as response:
-            if response.status == 200:
-                data = await response.json()
-                return data
-            else:
-                return None
+import asyncio, time
 
 async def clear():
     if platform.system() == "Windows":
         os.system("cls")
     else:
         os.system("clear")
-
 
 async def initRoles(guild):
     roles_data = []
@@ -44,7 +34,7 @@ async def createEmbed(discord, file_path):
     return embed
 
 
-async def menu(bot):
+async def menu(bot, alert=None):
     print('''\n
 \x1B[38;2;245;0;245m ████████╗ ██████╗ ███╗   ██╗██╗   ██╗    ██████╗  ██████╗ ████████╗    
 \x1B[38;2;225;0;245m ╚══██╔══╝██╔═══██╗████╗  ██║╚██╗ ██╔╝    ██╔══██╗██╔═══██╗╚══██╔══╝    
@@ -53,4 +43,8 @@ async def menu(bot):
 \x1B[38;2;165;0;245m    ██║   ╚██████╔╝██║ ╚████║   ██║       ██████╔╝╚██████╔╝   ██║       
 \x1B[38;2;145;0;245m    ╚═╝    ╚═════╝ ╚═╝  ╚═══╝   ╚═╝       ╚═════╝  ╚═════╝    ╚═╝ \x1b[0m      
     ''')
+    print(f'[ Admin Panel ] [ v1.1 ] {f"[ {alert} ]" if alert else ""}\n')
     print(f'[ \x1B[38;2;245;0;245mConnected\x1b[0m ]\n[ \x1B[38;2;245;0;245mBot:\x1b[0m {bot.user.name} ]\n[ \x1B[38;2;245;0;245mID:\x1b[0m {bot.user.id} ]')
+    print("[1] Broadcast a message\n")
+
+

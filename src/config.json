@@ -1,7 +1,95 @@
 {
-    "guild_id": null,
-    "channel_id": null,
-    "channel_name": null,
+    "guild_id": 1190657549494669402,
+    "channel_id": "1233410655055511654",
+    "channel_name": "console",
     "roles": [
+        {
+            "name": "@everyone",
+            "id": 1190657549494669402
+        },
+        {
+            "name": "Tony",
+            "id": 1233411972859428965
+        },
+        {
+            "name": "new role",
+            "id": 1233411263216750592
+        },
+        {
+            "name": "Gay French",
+            "id": 1191072082344288396
+        },
+        {
+            "name": "Appy",
+            "id": 1190805856393113742
+        },
+        {
+            "name": "Dyno",
+            "id": 1190799763403186209
+        },
+        {
+            "name": "skiop",
+            "id": 1190798130636140615
+        },
+        {
+            "name": "Suggestions Bot",
+            "id": 1190795730990944297
+        },
+        {
+            "name": ".",
+            "id": 1190800465726820382
+        },
+        {
+            "name": "Community",
+            "id": 1190794254755307540
+        },
+        {
+            "name": "Race Haters",
+            "id": 1190795355328094249
+        },
+        {
+            "name": "Ezzay",
+            "id": 1190738551999041639
+        },
+        {
+            "name": "Discord Staff",
+            "id": 1190794359113785484
+        },
+        {
+            "name": "Trusted",
+            "id": 1190797339187740672
+        },
+        {
+            "name": "Moderator",
+            "id": 1190797176423587900
+        },
+        {
+            "name": "Administrator",
+            "id": 1190703210973904957
+        },
+        {
+            "name": "Senior Admin",
+            "id": 1190794949353029664
+        },
+        {
+            "name": "Owner (DONT PING/DM)",
+            "id": 1190796076379283536
+        },
+        {
+            "name": "Autorole",
+            "id": 1190808133921165355
+        },
+        {
+            "name": "Nutman",
+            "id": 1190793340589977661
+        },
+        {
+            "name": "Ticket Tool",
+            "id": 1190702875253411843
+        },
+        {
+            "name": "MEE6",
+            "id": 1190672913037267022
+        }
     ]
 }
