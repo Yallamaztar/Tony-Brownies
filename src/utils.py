@@ -1,7 +1,7 @@
 import os, platform
 import json
 import asyncio, aiohttp
-from yt_dlp import YoutubeDL
+import yt_dlp
 
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
@@ -47,8 +47,7 @@ async def menu(bot, alert=None):
 \x1B[38;2;145;0;245m    ╚═╝    ╚═════╝ ╚═╝  ╚═══╝   ╚═╝       ╚═════╝  ╚═════╝    ╚═╝ \x1b[0m      
     ''')
     print(f'[ \x1B[38;2;245;0;245mConnected\x1b[0m ]\n[ \x1B[38;2;245;0;245mBot:\x1b[0m {bot.user.name} ]\n[ \x1B[38;2;245;0;245mID:\x1b[0m {bot.user.id} ]')
-
-
+                                                      
 BROWNIES_BASEURI = "http://141.11.196.83:1624"
 
 # SnD
@@ -88,6 +87,25 @@ async def antiNottScript(url, name, reason):
             await asyncio.sleep(0.5)
 
 
+AUDIO_QUEUE   = []
+queue_size = 0
 
+async def downloadYtAudio(url):
+    opts = {
+        'format': 'bestaudio/best',
+        'noplaylist': 'True',
+        'outtmpl': 'src/tmp/%(title)s.%(ext)s'
+    }
 
+    with yt_dlp.YoutubeDL(opts) as ydl:
+        ydl.download([url])
 
+async def searchYt(video, ctx):
+    check = video.split('/')
+    link = False
+
+# async def main():
+#     await downloadYtAudio("https://www.youtube.com/watch?v=XJ1vxDFkNIY")
+
+# if __name__ == '__main__':
+#     asyncio.run(main())

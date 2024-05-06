@@ -76,15 +76,14 @@ async def on_application_command(ctx: discord.ApplicationContext):
     id = str(uuid.uuid4())
     author = ctx.author.mention
     command_name = ctx.command.name
-
     timestamp = datetime.now().strftime("%Y-%m-%d - %H:%M:%S")
     
     print("\n[ \x1B[38;2;245;0;245mCommand Received\x1b[0m ]")
     print(f"[ \x1B[38;2;245;0;245mID:\x1b[0m {id} ]")
-    print(f"[ \x1B[38;2;245;0;245mFrom:\x1b[0m {ctx.author.mention} ]")
-    print(f"[ \x1B[38;2;245;0;245mCommand:\x1b[0m {ctx.command} ]")
+    print(f"[ \x1B[38;2;245;0;245mFrom:\x1b[0m {ctx.author.name} | {ctx.author.mention} ]")
+    print(f"[ \x1B[38;2;245;0;245mCommand:\x1b[0m /{ctx.command} ] ")
     print(f"[ \x1B[38;2;245;0;245mTimestamp:\x1b[0m {timestamp} ]")
-    
+
     data = {
         "id": id,
         "author": author,
