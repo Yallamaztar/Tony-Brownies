@@ -72,7 +72,6 @@ async def on_application_command(ctx: discord.ApplicationContext):
     await clear()
     await menu(bot)
     
-    # Log schema
     id = str(uuid.uuid4())
     author = ctx.author.mention
     command_name = ctx.command.name
